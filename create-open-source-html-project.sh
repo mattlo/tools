@@ -24,6 +24,9 @@ then
 	sed -i '' "s/PROJECT_NAME/$angularProjectName/g" "./src/js/bootstrap.js"
 
 	sh -x build.sh
+
+	git add .
+	git commit -m 'added project skeleton'
 fi
 
 echo -e "\n\033[33;32mDone \033[0m"
