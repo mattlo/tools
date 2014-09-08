@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo -e "\033[33;35mOpen Source Bare HTML Project Scaffold \033[0m "
+echo "=== Open Source Bare HTML Project Scaffold ==="
 
 echo "Project Name (e.g.: project-name):"
 read projectName

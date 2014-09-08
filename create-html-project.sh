@@ -1,11 +1,11 @@
 #!/bin/sh
 
-echo -e "=== Bare HTML Project Scaffold ==="
+echo "=== Bare HTML Project Scaffold ==="
 
-echo -e "\033[33;35mProject Name (e.g.: project-name): \033[0m "
+echo "Project Name (e.g.: project-name):"
 read projectName
 
-echo -e "\033[33;35mAngular App Name (e.g.: projectName): \033[0m "
+echo "Angular App Name (e.g.: projectName):"
 read angularProjectName
 
 if [ "$projectName" != "" ] 
