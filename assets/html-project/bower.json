@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "main": "src/views/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.2",
+    "angular-logger": "~1",
+    "jquery": "~1",
+    "modernizr": "~2.7",
+    "namespace-simple": "~1.0.0",
+    "modernizr": "~2",
+    "font-awesome": "~4"
+  },
+  "js": [
+    "src/app/**/*.js"
+  ]
+}

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo -e "\033[33;35mSCSS Component Scaffold \033[0m "
+
+
+echo "Component Name (.e.g.: component-name): "
+read cmpName
+
+
+scsspath="src/scss/components/$cmpName.scss"
+scssmain="src/scss/main.scss"
+
+if [ "$cmpName" != "" ] 
+then
+	echo ""
+
+	printf '.%s {\n\t\n}' $cmpName > $scsspath
+
+	echo -e "\033[33;32m[SCSS] created \033[0m $scsspath"
+
+	(printf '\n@import "components/%s.scss";' $cmpName) >> $scssmain
+
+	echo -e "\033[33;32m[SCSS] modified \033[0m $scssmain"
+fi
+
+echo -e "\n\033[33;32mDone \033[0m"
